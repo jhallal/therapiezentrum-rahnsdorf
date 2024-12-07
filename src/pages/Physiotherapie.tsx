@@ -30,7 +30,7 @@ const Physiotherapie = () => {
           {/* Header Section */}
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-primary mb-4">Name of the Therapist</h1>
-            <div className="relative w-64 h-64 mx-auto mb-8 group">
+            <div className="relative md:w-1/2 h-80 mx-auto mb-8 group">
               <img
                 src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80"
                 alt="Name of the Therapist"
