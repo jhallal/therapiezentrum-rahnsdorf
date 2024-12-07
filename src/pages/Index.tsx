@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Banner from "@/components/Banner";
 import AgeGroupNav from "@/components/AgeGroupNav";
 import PracticeSummary from "@/components/PracticeSummary";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const practices = [
@@ -32,11 +33,11 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
       <Banner />
       <AgeGroupNav />
-      <div className="bg-gray-50">
+      <div className="bg-gray-50 flex-grow">
         {practices.map((practice) => (
           <PracticeSummary
             key={practice.id}
@@ -44,6 +45,7 @@ const Index = () => {
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };
