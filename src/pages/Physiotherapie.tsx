@@ -29,11 +29,11 @@ const Physiotherapie = () => {
         <div className="animate-fade-in">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-primary mb-4">Mandy Haase</h1>
+            <h1 className="text-4xl font-bold text-primary mb-4">Name of the Therapist</h1>
             <div className="relative w-64 h-64 mx-auto mb-8 group">
               <img
                 src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80"
-                alt="Mandy Haase"
+                alt="Name of the Therapist"
                 className="w-full h-full object-cover rounded-lg shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
               />
               <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-all duration-300 rounded-lg" />
@@ -106,11 +106,11 @@ const Physiotherapie = () => {
           <div>
             <h2 className="text-2xl font-bold text-primary mb-4">Kontaktdaten</h2>
             <div className="text-gray-600 space-y-2">
-              <p>Fürstenwalder Allee 36</p>
-              <p>12589 Berlin</p>
-              <p>Tel.: <a href="tel:+491708088110" className="hover:underline">+491708088110</a></p>
-              <p>Mail: <a href="mailto:mandy-haase@t-online.de" className="hover:underline">mandy-haase@t-online.de</a></p>
-              <p>Website: <a href="http://www.cantienica-am-mueggelsee.de" target="_blank" rel="noopener noreferrer" className="hover:underline">www.cantienica-am-mueggelsee.de</a></p>
+              <p>Street Number - 0000</p>
+              <p>00000 Berlin</p>
+              <p>Tel.: <a href="tel:+490000000" className="hover:underline">+490000000</a></p>
+              <p>Mail: <a href="mailto:name@mail.de" className="hover:underline">name@mail.de</a></p>
+              <p>Website: <a href="http://www.website-cantienica.de" target="_blank" rel="noopener noreferrer" className="hover:underline">www.website-cantienica.de</a></p>
             </div>
           </div>
         </div>
