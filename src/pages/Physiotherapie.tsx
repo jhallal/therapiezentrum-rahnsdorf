@@ -30,6 +30,14 @@ const Physiotherapie = () => {
           {/* Header Section */}
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-primary mb-4">Mandy Haase</h1>
+            <div className="relative w-64 h-64 mx-auto mb-8 group">
+              <img
+                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80"
+                alt="Mandy Haase"
+                className="w-full h-full object-cover rounded-lg shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
+              />
+              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-all duration-300 rounded-lg" />
+            </div>
             <p className="text-xl text-gray-600">Staatlich geprüfte Physiotherapeutin</p>
             <p className="text-xl text-gray-600">Bachelor of Health</p>
           </div>
