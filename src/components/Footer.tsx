@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-white py-8 mt-16">
@@ -11,9 +13,9 @@ const Footer = () => {
             </address>
           </div>
           <div className="flex md:justify-end items-start">
-            <a href="/impressum" className="hover:text-secondary transition-colors">
+            <Link to="/impressum" className="hover:text-secondary transition-colors">
               Impressum
-            </a>
+            </Link>
           </div>
         </div>
       </div>

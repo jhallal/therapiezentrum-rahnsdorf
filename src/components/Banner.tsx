@@ -11,7 +11,14 @@ const Banner = () => {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-0 right-0 w-1/3 h-full opacity-10 bg-[url('/placeholder.svg')] bg-cover bg-center" />
+      <div 
+        className="absolute bottom-0 right-0 w-1/3 h-full opacity-20"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      />
     </div>
   );
 };
