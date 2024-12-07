@@ -24,12 +24,6 @@ const Ergotherapie = () => {
       role: "Ergotherapeut",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
     }
-    ,
-    {
-      name: "Thomas Klein",
-      role: "Ergotherapeut",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
-    }
   ];
 
   return (
