@@ -5,6 +5,26 @@ const Physiotherapie = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
+      <div className="relative bg-gradient-to-r from-primary to-primary-light text-white py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
+              Physiotherapie
+            </h1>
+            <p className="text-xl opacity-90 animate-fade-in">
+              Professional physiotherapy services for your well-being
+            </p>
+          </div>
+        </div>
+        <div 
+          className="absolute bottom-0 right-0 w-1/3 h-full opacity-20"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        />
+      </div>
       <div className="container mx-auto px-4 py-24">
         <div className="animate-fade-in">
           {/* Header Section */}
