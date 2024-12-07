@@ -55,7 +55,7 @@ const Ergotherapie = () => {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold text-primary mb-4">Anna Wagner</h1>
-            <div className="relative w-64 h-64 mx-auto mb-8 group">
+            <div className="relative md:w-1/2 h-80 mx-auto mb-8 group">
               <img
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
                 alt="Anna Wagner"
@@ -126,11 +126,11 @@ const Ergotherapie = () => {
           <div>
             <h2 className="text-2xl font-bold text-primary mb-6">Kontaktdaten</h2>
             <div className="text-gray-600 space-y-2">
-              <p>Fürstenwalder Allee 36</p>
-              <p>12589 Berlin</p>
-              <p>Tel.: <a href="tel:+491708088110" className="hover:text-primary transition-colors">+491708088110</a></p>
-              <p>Mail: <a href="mailto:info@ergotherapie-berlin.de" className="hover:text-primary transition-colors">info@ergotherapie-berlin.de</a></p>
-              <p>Website: <a href="http://www.ergotherapie-berlin.de" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">www.ergotherapie-berlin.de</a></p>
+              <p>Streetname Allee 36</p>
+              <p>10000 Berlin</p>
+              <p>Tel.: <a href="tel:+491700000000" className="hover:text-primary transition-colors">+491700000000</a></p>
+              <p>Mail: <a href="mailto:info@ergotherapiesite-berlin.de" className="hover:text-primary transition-colors">info@ergotherapiesite-berlin.de</a></p>
+              <p>Website: <a href="http://www.ergotherapiesite-berlin.de" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">www.ergotherapiesite-berlin.de</a></p>
             </div>
           </div>
         </div>
