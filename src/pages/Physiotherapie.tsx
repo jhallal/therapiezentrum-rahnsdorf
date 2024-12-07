@@ -7,32 +7,82 @@ const Physiotherapie = () => {
       <Navigation />
       <div className="container mx-auto px-4 py-24">
         <div className="animate-fade-in">
-          <h1 className="text-4xl font-bold text-primary mb-8">Physiotherapie</h1>
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="md:w-1/2">
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Our physiotherapy practice offers expert treatment for various physical conditions, helping patients recover 
-                from injury, reduce pain, and improve mobility through targeted exercises and manual therapy.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Our treatments include:
-              </p>
-              <ul className="list-disc list-inside text-gray-600 space-y-2 mb-6">
-                <li>Manual therapy</li>
-                <li>Exercise therapy</li>
-                <li>Sports rehabilitation</li>
-                <li>Pain management</li>
-                <li>Post-operative rehabilitation</li>
+          {/* Header Section */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold text-primary mb-4">Mandy Haase</h1>
+            <p className="text-xl text-gray-600">Staatlich geprüfte Physiotherapeutin</p>
+            <p className="text-xl text-gray-600">Bachelor of Health</p>
+          </div>
+
+          {/* Main Content Grid */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Services Section */}
+            <div>
+              <h2 className="text-2xl font-bold text-primary mb-4">Angebot</h2>
+              <ul className="list-disc list-inside space-y-2 text-gray-600">
+                <li>Funktionelles, intelligentes und nachhaltiges Ganzkörpertraining</li>
+                <li>Bewegungsanalyse, Körperwahrnehmung und Entspannung</li>
+                <li>Ausrichtung des Skeletts mit ökonomischem Muskeleinsatz</li>
+                <li>Schulung einer aufrechten Körperhaltung im Alltag, Beruf und in der Freizeit</li>
+                <li>Aktivierung der Tiefenmuskulatur inklusive Beckenboden und Zwerchfell</li>
               </ul>
             </div>
-            <div className="md:w-1/2">
-              <div className="w-80 h-80 mx-auto overflow-hidden rounded-xl shadow-lg">
-                <img
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80"
-                  alt="Physiotherapie Team"
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
+
+            {/* Training Formats Section */}
+            <div>
+              <h2 className="text-2xl font-bold text-primary mb-4">Trainingsformate</h2>
+              <ul className="list-disc list-inside space-y-2 text-gray-600">
+                <li>Einzellektionen</li>
+                <li>Gruppentraining</li>
+                <li>Regelmäßige Präventionskurse „Beckenbodentraining nach der CANTIENICA®-Methode" (von den Krankenkassen bezuschusst)</li>
+                <li>Workshops mit variierenden Themen</li>
+                <li>Unterricht vor Ort, online über Zoom oder in Kombination</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* CANTIENICA Method Section */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-primary mb-4">CANTIENICA®-Methode für Körperform & Haltung</h2>
+            <div className="space-y-4 text-gray-600">
+              <p>Die CANTIENICA®-Methode – Ein effektives nachhaltiges Ganzkörpertrainingsprogramm. Sie trainiert Kraft, Beweglichkeit und weckt Energie und Lebensfreude. Durch die Aufspannung der Wirbelsäule und den physiologischen Gebrauch der Tiefenmuskulatur werden die Gelenke entlastet und das Skelett aus- und aufgerichtet. Zentrale Bestandteile sind das Kennenlernen und der funktionelle Gebrauch der tiefen Rücken- und Beckenbodenmuskulatur.</p>
+              <p>Das CANTIENICA®-Training bietet eine Vielzahl von anatomisch begründeten Übungen. Die Muskeln werden mit kleinen dreidimensionalen Bewegungen gekräftigt und gedehnt. Viele Übungen können problemlos im Alltag absolviert werden.</p>
+              <p>Die CANTIENICA®-Methode bietet die Möglichkeit, die Gelenke und insbesondere die Wirbelsäule optimal auszurichten und die Körperhaltung im Alltag positiv zu verändern. Außerdem findet eine Schulung für das rückenschonende Verhalten statt. So wirkt das CANTIENICA®-Training sicher, effektiv und nachhaltig bei Rückenbeschwerden aller Art, Fehlhaltungen, Beckenschiefstand, Hüftarthrose, Blasenschwäche und Organsenkungen.</p>
+              <p>Die CANTIENICA®-Methode wird stetig von Benita Cantieni weiterentwickelt. Weitere Informationen sind unter <a href="http://www.cantienica.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.cantienica.com</a> zu finden.</p>
+            </div>
+          </div>
+
+          {/* Training Times Section */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-primary mb-4">Trainingszeiten</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Offenes CANTIENICA®-Training</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li><span className="font-medium">Montag:</span> 09:00-10:00, 16:45-17:45 und 18:15-19:15</li>
+                  <li><span className="font-medium">Donnerstag:</span> 17:30-18:30 und 19:00-20:00</li>
+                </ul>
               </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Präventionskurs CANTIENICA®-Beckenbodentraining</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li><span className="font-medium">Mittwoch:</span> 10:00-11:00 und 18:30-19:30</li>
+                </ul>
+              </div>
+              <p className="text-gray-600 italic">Einzellektionen und Probetraining sind nach Absprache möglich.</p>
+              <p className="text-gray-600 font-semibold">Ich bitte in jedem Fall dringend um telefonische Terminabsprache!!!</p>
+            </div>
+          </div>
+
+          {/* Contact Section */}
+          <div>
+            <h2 className="text-2xl font-bold text-primary mb-4">Kontaktdaten</h2>
+            <div className="text-gray-600 space-y-2">
+              <p>Fürstenwalder Allee 36</p>
+              <p>12589 Berlin</p>
+              <p>Tel.: <a href="tel:+491708088110" className="hover:underline">+491708088110</a></p>
+              <p>Mail: <a href="mailto:mandy-haase@t-online.de" className="hover:underline">mandy-haase@t-online.de</a></p>
+              <p>Website: <a href="http://www.cantienica-am-mueggelsee.de" target="_blank" rel="noopener noreferrer" className="hover:underline">www.cantienica-am-mueggelsee.de</a></p>
             </div>
           </div>
         </div>
