@@ -15,7 +15,7 @@ const PracticeSummary = ({ id, title, description, imageUrl }: PracticeSummaryPr
             <p className="text-gray-600 leading-relaxed">{description}</p>
           </div>
           <div className="order-1 md:order-2">
-            <div className="w-64 h-64 mx-auto overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="w-80 h-80 mx-auto overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <img
                 src={imageUrl}
                 alt={`${title} Team`}
