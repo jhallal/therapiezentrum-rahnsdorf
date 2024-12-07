@@ -15,11 +15,13 @@ const PracticeSummary = ({ id, title, description, imageUrl }: PracticeSummaryPr
             <p className="text-gray-600 leading-relaxed">{description}</p>
           </div>
           <div className="order-1 md:order-2">
-            <img
-              src={imageUrl}
-              alt={`${title} Team`}
-              className="rounded-xl shadow-lg w-full h-64 object-cover"
-            />
+            <div className="w-64 h-64 mx-auto overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+              <img
+                src={imageUrl}
+                alt={`${title} Team`}
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+              />
+            </div>
           </div>
         </div>
       </div>
