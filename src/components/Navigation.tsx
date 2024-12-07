@@ -1,22 +1,23 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
     { title: 'Home', href: '/' },
-    { title: 'Kinderarztpraxis', href: '#kinderarzt' },
-    { title: 'Ergotherapie', href: '#ergo' },
-    { title: 'ADHD Therapist', href: '#adhd' },
-    { title: 'Physiotherapie', href: '#physio' },
+    { title: 'Kinderarztpraxis', href: '/kinderarzt' },
+    { title: 'Ergotherapie', href: '/ergotherapie' },
+    { title: 'ADHD Therapist', href: '/adhd' },
+    { title: 'Physiotherapie', href: '/physiotherapie' },
   ];
 
   return (
     <nav className="bg-primary text-white py-4 fixed w-full top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <div className="text-xl font-bold">Health Center</div>
+          <Link to="/" className="text-xl font-bold">Health Center</Link>
           
           {/* Mobile menu button */}
           <button 
@@ -29,13 +30,13 @@ const Navigation = () => {
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-6">
             {menuItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
+                to={item.href}
                 className="hover:text-secondary transition-colors"
               >
                 {item.title}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -44,14 +45,14 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden mt-4 space-y-4">
             {menuItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
+                to={item.href}
                 className="block hover:text-secondary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.title}
-              </a>
+              </Link>
             ))}
           </div>
         )}

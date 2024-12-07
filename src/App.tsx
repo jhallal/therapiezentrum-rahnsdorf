@@ -5,6 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Impressum from "./pages/Impressum";
+import Kinderarzt from "./pages/Kinderarzt";
+import Ergotherapie from "./pages/Ergotherapie";
+import ADHDTherapist from "./pages/ADHDTherapist";
+import Physiotherapie from "./pages/Physiotherapie";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +21,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/kinderarzt" element={<Kinderarzt />} />
+          <Route path="/ergotherapie" element={<Ergotherapie />} />
+          <Route path="/adhd" element={<ADHDTherapist />} />
+          <Route path="/physiotherapie" element={<Physiotherapie />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
