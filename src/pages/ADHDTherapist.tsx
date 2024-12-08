@@ -22,7 +22,7 @@ const ADHDTherapist = () => {
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
       
-      {/* Banner */}
+      {/* Banner with Background Image */}
       <div className="relative bg-gradient-to-r from-primary to-primary-light text-white py-32 mt-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
@@ -34,6 +34,14 @@ const ADHDTherapist = () => {
             </p>
           </div>
         </div>
+        <div 
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        />
       </div>
 
       {/* Main Content */}
@@ -47,6 +55,9 @@ const ADHDTherapist = () => {
             className="w-32 h-32 mx-auto object-contain"
           />
         </div>
+
+        {/* Modern Section Separator */}
+        <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
         {/* About Us and Praxis Photo */}
         <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -88,6 +99,9 @@ const ADHDTherapist = () => {
           </div>
         </div>
 
+        {/* Modern Section Separator */}
+        <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
+
         {/* ADHS Assessment */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-primary mb-6">ADHS Assessment</h3>
@@ -109,6 +123,9 @@ const ADHDTherapist = () => {
           </div>
         </div>
 
+        {/* Modern Section Separator */}
+        <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
+
         {/* Paare Therapie */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-primary mb-6">Paare Therapie</h3>
@@ -118,6 +135,9 @@ const ADHDTherapist = () => {
           </p>
           <a href="#contact" className="text-primary hover:underline">Learn more about couples therapy →</a>
         </div>
+
+        {/* Modern Section Separator */}
+        <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
         {/* FortBildung */}
         <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -137,6 +157,9 @@ const ADHDTherapist = () => {
             />
           </div>
         </div>
+
+        {/* Modern Section Separator */}
+        <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
         {/* More About Us */}
         <div className="mb-16">
@@ -163,6 +186,9 @@ const ADHDTherapist = () => {
           </div>
         </div>
 
+        {/* Modern Section Separator */}
+        <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
+
         {/* Newsletter Subscription */}
         <div className="bg-gray-50 p-8 rounded-lg">
           <h3 className="text-2xl font-semibold text-primary mb-6">Subscribe to Our Newsletter</h3>
@@ -178,7 +204,7 @@ const ADHDTherapist = () => {
               required
               className="flex-1"
             />
-            <Button type="submit">Subscribe</Button>
+            <Button type="submit" className="text-white">Subscribe</Button>
           </form>
         </div>
       </div>
