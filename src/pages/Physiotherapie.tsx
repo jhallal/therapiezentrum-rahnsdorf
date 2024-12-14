@@ -17,7 +17,7 @@ const Physiotherapie = () => {
           </div>
         </div>
         <div 
-          className="absolute bottom-0 right-0 w-1/3 h-full opacity-20"
+          className="absolute bottom-0 right-0 w-1/3 h-full opacity-20 hidden md:block"
           style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80')",
             backgroundSize: 'cover',
@@ -25,6 +25,7 @@ const Physiotherapie = () => {
           }}
         />
       </div>
+
       <div className="container mx-auto px-4 py-24">
         <div className="animate-fade-in">
           {/* Header Section */}
