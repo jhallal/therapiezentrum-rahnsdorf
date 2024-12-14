@@ -1,42 +1,163 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Kinderarzt = () => {
+  const openingHours = [
+    { day: "Montag", hours: "08:00-12:00 und 14:00-17:00" },
+    { day: "Dienstag", hours: "08:00-13:00" },
+    { day: "Mittwoch", hours: "08:00-13:00" },
+    { day: "Donnerstag", hours: "13:00-18:00" },
+    { day: "Freitag", hours: "08:00-12:00" },
+  ];
+
+  const teamMembers = [
+    { name: "Dr. med. AABB XXYY", role: "Fachärztin, tiefenpsychologisch fundierte Psychotherapeutin" },
+    { name: "QQWW CCVV", role: "Krankenschwester" },
+    { name: "Mandy FFFF", role: "Medizinische Fachangestellte" },
+    { name: "Anne WWRR", role: "Medizinische Mitarbeiterin" },
+    { name: "Lea CCDD", role: "Auszubildende" },
+  ];
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
-      <div className="container mx-auto px-4 py-24">
-        <div className="animate-fade-in">
-          <h1 className="text-4xl font-bold text-primary mb-8">Kinderarztpraxis</h1>
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="md:w-1/2">
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Specialized pediatric care focusing on the health and development of children from birth through adolescence. 
-                Our experienced team provides comprehensive medical services, preventive care, and treatment for various childhood conditions.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                We offer:
-              </p>
-              <ul className="list-disc list-inside text-gray-600 space-y-2 mb-6">
-                <li>Regular check-ups and vaccinations</li>
-                <li>Treatment of acute and chronic illnesses</li>
-                <li>Development monitoring</li>
-                <li>Nutritional counseling</li>
-                <li>Emergency care during office hours</li>
-              </ul>
-            </div>
-            <div className="md:w-1/2">
-              <div className="w-80 h-80 mx-auto overflow-hidden rounded-xl shadow-lg">
-                <img
-                  src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80"
-                  alt="Kinderarztpraxis Team"
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-            </div>
+      
+      {/* Banner */}
+      <div className="relative bg-gradient-to-r from-primary to-primary-light text-white py-32 mt-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              KINDERARZTPRAXIS DR. XYZ
+            </h1>
+            <p className="text-xl mb-2">Dr. med. AABB XXYY</p>
+            <p className="text-lg">Fachärztin für Kinder- und Jugendmedizin</p>
+            <p className="text-lg">Tiefenpsychologisch fundierte Psychotherapeutin</p>
           </div>
         </div>
+        <div 
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        />
       </div>
+
+      <div className="container mx-auto px-4 py-16">
+        {/* Services Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-primary mb-8">Angebot</h2>
+          <div className="space-y-6">
+            <h3 className="text-xl font-semibold">Diagnostik und Therapie bei:</h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <li>Akuten Erkrankungen im Kindes- und Jugendalter (z.B.: EKG, Lungenfunktion, Hör- und Sehtest, Laboruntersuchungen, Tympanometrie, Ultraschalldiagnostik der Hüften)</li>
+              <li>Chronischen Erkrankungen im Kindes- und Jugendalter</li>
+              <li>Psychotherapie (tiefenpsychologisch fundiert) bei Jugendlichen bis 18 Jahre</li>
+              <li>Vorsorgeuntersuchungen im Kindes- und Jugendalter (U2-J2)</li>
+              <li>Impfungen</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-8">IGel (Individuelle Gesundheitsleistungen, privat zu zahlen):</h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <li>Reiseimpfungen</li>
+              <li>Tiefenpsychologisch fundierte Psychotherapie für Erwachsene</li>
+              <li>Vorträge und Coaching</li>
+              <li>Sehtest (Plusoptix)</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Opening Hours Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-primary mb-8">Öffnungszeiten</h2>
+          <Card>
+            <CardContent className="p-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {openingHours.map((item, index) => (
+                  <div key={index} className="flex justify-between items-center py-2 border-b last:border-b-0">
+                    <span className="font-medium">{item.day}</span>
+                    <span className="text-gray-600">{item.hours}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-6 text-gray-700 italic">
+                Wir bitten in jedem Fall dringend um telefonische Terminabsprache. Bei akuter Erkrankung Ihres Kindes rufen Sie bitte direkt zu Beginn unserer Sprechstunde an, damit wir schnellstmöglich einen Termin für Sie finden können.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Team Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-primary mb-8">Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="flex items-center space-x-4">
+                <Avatar className="h-16 w-16">
+                  <AvatarImage src={`https://i.pravatar.cc/150?img=${index + 1}`} />
+                  <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                </Avatar>
+                <div>
+                  <h3 className="font-semibold">{member.name}</h3>
+                  <p className="text-sm text-gray-600">{member.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-primary mb-8">Kontaktdaten</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardContent className="p-6">
+                <div className="space-y-4">
+                  <p>Fürstenwalder Allee 000</p>
+                  <p>000 Berlin</p>
+                  <p>Tel.: +49306000</p>
+                  <p>Fax: +49306000</p>
+                  <p>Mail: mail@mail.de</p>
+                  <p className="font-bold mt-4">Wir bitten in jedem Fall dringend um telefonische Terminabsprache!!!</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4">Im Notfall</h3>
+                <div className="space-y-4">
+                  <p>Dr. med. AABB CCVV (mobil): +49174990000</p>
+                  <p>Kassenärztlicher Notdienst: 00000</p>
+                  
+                  <div className="mt-6">
+                    <p className="font-semibold">Klinik für Kinder-und Jugendmedizin Sanaklinikum</p>
+                    <p>Fanningerstraße 32, 10365 Berlin</p>
+                    <p>Tel.: +493055180000</p>
+                  </div>
+
+                  <div className="mt-6">
+                    <p className="font-semibold">DRK Krankenhaus Köpenick</p>
+                    <p>Salvador-Allende-Straße 2-8</p>
+                    <p>Rettungsstelle</p>
+                    <p>0000 Berlin</p>
+                    <p>Tel.: +493030350000</p>
+                  </div>
+
+                  <div className="mt-6">
+                    <p className="font-semibold">Berliner Krisendienst (für psychische Notfälle)</p>
+                    <p>+49303900000</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+      </div>
+
       <Footer />
     </div>
   );
