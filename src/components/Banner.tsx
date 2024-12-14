@@ -4,7 +4,7 @@ const Banner = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
-            Welcome to Our Health Center
+            Welcome to Therapiezentrum Rahnsdorf
           </h1>
           <p className="text-xl opacity-90 animate-fade-in">
             Comprehensive healthcare solutions for your entire family
