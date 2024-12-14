@@ -24,20 +24,20 @@ const Kinderarzt = () => {
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
       
-      {/* Banner */}
-      <div className="relative bg-gradient-to-r from-primary to-primary-light text-white py-32 mt-16">
+      {/* Banner - styled like Ergotherapie */}
+      <div className="relative bg-gradient-to-r from-primary to-primary-light text-white py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               KINDERARZTPRAXIS DR. XYZ
             </h1>
-            <p className="text-xl mb-2">Dr. med. AABB XXYY</p>
-            <p className="text-lg">Fachärztin für Kinder- und Jugendmedizin</p>
-            <p className="text-lg">Tiefenpsychologisch fundierte Psychotherapeutin</p>
+            <p className="text-xl opacity-90 animate-fade-in">
+              Fachärztin für Kinder- und Jugendmedizin
+            </p>
           </div>
         </div>
         <div 
-          className="absolute inset-0 opacity-20"
+          className="absolute bottom-0 right-0 w-1/3 h-full opacity-20"
           style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80')",
             backgroundSize: 'cover',
@@ -46,8 +46,26 @@ const Kinderarzt = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 py-16">
-        {/* Services Section */}
+      <div className="container mx-auto px-4 py-24">
+        <div className="animate-fade-in">
+          {/* Header Section - styled like Ergotherapie */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl font-bold text-primary mb-4">Dr. med. AABB XXYY</h1>
+            <div className="relative md:w-1/2 h-80 mx-auto mb-8 group">
+              <img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80"
+                alt="Dr. med. AABB XXYY"
+                className="w-full h-full object-cover rounded-lg shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
+              />
+              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-all duration-300 rounded-lg" />
+            </div>
+            <div className="space-y-2">
+              <p className="text-xl text-gray-600">Fachärztin für Kinder- und Jugendmedizin</p>
+              <p className="text-xl text-gray-600">Tiefenpsychologisch fundierte Psychotherapeutin</p>
+            </div>
+          </div>
+
+          {/* Services Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-primary mb-8">Angebot</h2>
           <div className="space-y-6">
@@ -70,7 +88,7 @@ const Kinderarzt = () => {
           </div>
         </section>
 
-        {/* Opening Hours Section */}
+          {/* Opening Hours Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-primary mb-8">Öffnungszeiten</h2>
           <Card>
@@ -90,7 +108,7 @@ const Kinderarzt = () => {
           </Card>
         </section>
 
-        {/* Team Section */}
+          {/* Team Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-primary mb-8">Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -109,7 +127,7 @@ const Kinderarzt = () => {
           </div>
         </section>
 
-        {/* Contact Section */}
+          {/* Contact Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-primary mb-8">Kontaktdaten</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -156,6 +174,7 @@ const Kinderarzt = () => {
             </Card>
           </div>
         </section>
+        </div>
       </div>
 
       <Footer />
