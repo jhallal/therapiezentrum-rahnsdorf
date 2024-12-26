@@ -18,34 +18,34 @@ const AgeGroupNav = () => {
             <nav className="py-4">
               <ul className="space-y-4">
                 <li className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-2 before:bg-primary before:rounded-full hover:before:bg-primary-light transition-colors">
-                  <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap block transition-colors">1. Private Psychotherapie (tiefenpsychologisch orientiert)</a>
+                  <a href="#" className="text-primary hover:text-primary-light block transition-colors">1. Private Psychotherapie (tiefenpsychologisch orientiert)</a>
                 </li>
                 <li className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-2 before:bg-primary before:rounded-full hover:before:bg-primary-light transition-colors">
-                  <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap block transition-colors">2. Private Physiotherapie</a>
+                  <a href="#" className="text-primary hover:text-primary-light block transition-colors">2. Private Physiotherapie</a>
                 </li>
                 <li className="space-y-2">
                   <div className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-2 before:bg-primary before:rounded-full hover:before:bg-primary-light transition-colors">
-                    <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap block transition-colors">3. AD(H)S</a>
+                    <a href="#" className="text-primary hover:text-primary-light block transition-colors">3. AD(H)S</a>
                   </div>
                   <ul className="pl-6 space-y-2">
                     <li className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-2 before:bg-primary-light before:rounded-full hover:before:bg-primary transition-colors">
-                      <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap block transition-colors">3.1 Online Testung/ weiblich sozialisierte Personen</a>
+                      <a href="#" className="text-primary hover:text-primary-light block transition-colors">3.1 Online Testung/ weiblich sozialisierte Personen</a>
                     </li>
                     <li className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-2 before:bg-primary-light before:rounded-full hover:before:bg-primary transition-colors">
-                      <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap block transition-colors">3.2 Testung vor Ort</a>
+                      <a href="#" className="text-primary hover:text-primary-light block transition-colors">3.2 Testung vor Ort</a>
                     </li>
                   </ul>
                 </li>
                 <li className="space-y-2">
                   <div className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-2 before:bg-primary before:rounded-full hover:before:bg-primary-light transition-colors">
-                    <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap block transition-colors">4. Ergotherapie</a>
+                    <a href="#" className="text-primary hover:text-primary-light block transition-colors">4. Ergotherapie</a>
                   </div>
                   <ul className="pl-6 space-y-2">
                     <li className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-2 before:bg-primary-light before:rounded-full hover:before:bg-primary transition-colors">
-                      <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap block transition-colors">4.1 Therpiezentrum Jouanneaux (Marianne Jouanneaux)</a>
+                      <a href="#" className="text-primary hover:text-primary-light block transition-colors">4.1 Therpiezentrum Jouanneaux (Marianne Jouanneaux)</a>
                     </li>
                     <li className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-2 before:bg-primary-light before:rounded-full hover:before:bg-primary transition-colors">
-                      <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap block transition-colors">4.2 Ergotherapiepraxis Busse (Katharina Hallal)</a>
+                      <a href="#" className="text-primary hover:text-primary-light block transition-colors">4.2 Ergotherapiepraxis Busse (Katharina Hallal)</a>
                     </li>
                   </ul>
                 </li>
@@ -67,10 +67,10 @@ const AgeGroupNav = () => {
             <nav className="py-4">
               <ul className="space-y-4">
                 <li className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-2 before:bg-primary before:rounded-full hover:before:bg-primary-light transition-colors">
-                  <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap block transition-colors">1. Kinderaerztliche Leistungen</a>
+                  <a href="#" className="text-primary hover:text-primary-light block transition-colors">1. Kinderaerztliche Leistungen</a>
                 </li>
                 <li className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-2 before:bg-primary before:rounded-full hover:before:bg-primary-light transition-colors">
-                  <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap block transition-colors">2. Ergotherapie</a>
+                  <a href="#" className="text-primary hover:text-primary-light block transition-colors">2. Ergotherapie</a>
                 </li>
               </ul>
             </nav>
