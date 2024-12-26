@@ -18,30 +18,30 @@ const AgeGroupNav = () => {
             <nav className="py-4">
               <ul className="space-y-4">
                 <li>
-                  <a href="#" className="text-primary hover:text-primary-light">1. Private Psychotherapie (tiefenpsychologisch orientiert)</a>
+                  <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap">1. Private Psychotherapie (tiefenpsychologisch orientiert)</a>
                 </li>
                 <li>
-                  <a href="#" className="text-primary hover:text-primary-light">2. Private Physiotherapie</a>
+                  <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap">2. Private Physiotherapie</a>
                 </li>
                 <li className="space-y-2">
-                  <a href="#" className="text-primary hover:text-primary-light">3. AD(H)S</a>
+                  <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap">3. AD(H)S</a>
                   <ul className="pl-6 space-y-2">
                     <li>
-                      <a href="#" className="text-primary hover:text-primary-light">3.1 Online Testung/ weiblich sozialisierte Personen</a>
+                      <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap">3.1 Online Testung/ weiblich sozialisierte Personen</a>
                     </li>
                     <li>
-                      <a href="#" className="text-primary hover:text-primary-light">3.2 Testung vor Ort</a>
+                      <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap">3.2 Testung vor Ort</a>
                     </li>
                   </ul>
                 </li>
                 <li className="space-y-2">
-                  <a href="#" className="text-primary hover:text-primary-light">4. Ergotherapie</a>
+                  <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap">4. Ergotherapie</a>
                   <ul className="pl-6 space-y-2">
                     <li>
-                      <a href="#" className="text-primary hover:text-primary-light">4.1 Therpiezentrum Jouanneaux (Marianne Jouanneaux)</a>
+                      <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap">4.1 Therpiezentrum Jouanneaux (Marianne Jouanneaux)</a>
                     </li>
                     <li>
-                      <a href="#" className="text-primary hover:text-primary-light">4.2 Ergotherapiepraxis Busse (Katharina Hallal)</a>
+                      <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap">4.2 Ergotherapiepraxis Busse (Katharina Hallal)</a>
                     </li>
                   </ul>
                 </li>
@@ -63,10 +63,10 @@ const AgeGroupNav = () => {
             <nav className="py-4">
               <ul className="space-y-4">
                 <li>
-                  <a href="#" className="text-primary hover:text-primary-light">1. Kinderaerztliche Leistungen</a>
+                  <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap">1. Kinderaerztliche Leistungen</a>
                 </li>
                 <li>
-                  <a href="#" className="text-primary hover:text-primary-light">2. Ergotherapie</a>
+                  <a href="#" className="text-primary hover:text-primary-light whitespace-nowrap">2. Ergotherapie</a>
                 </li>
               </ul>
             </nav>
