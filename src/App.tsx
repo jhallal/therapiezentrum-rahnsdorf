@@ -23,7 +23,7 @@ const App = () => (
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/kinderarzt" element={<Kinderarzt />} />
           <Route path="/ergotherapie" element={<Ergotherapie />} />
-          <Route path="/adhd" element={<NeuroPerspektiven />} />
+          <Route path="/neuroperspektiven" element={<NeuroPerspektiven />} />
           <Route path="/physiotherapie" element={<Physiotherapie />} />
         </Routes>
       </BrowserRouter>
