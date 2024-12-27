@@ -9,7 +9,7 @@ const Navigation = () => {
     { title: 'Home', href: '/' },
     { title: 'Kinderarztpraxis', href: '/kinderarzt' },
     { title: 'Ergotherapie', href: '/ergotherapie' },
-    { title: 'ADHD Therapist', href: '/adhd' },
+    { title: 'Neuro Perspektiven', href: '/neuroperspektiven' },
     { title: 'Physiotherapie', href: '/physiotherapie' },
   ];
 

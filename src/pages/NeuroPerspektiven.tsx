@@ -21,20 +21,20 @@ const ADHDTherapist = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
-      
+
       {/* Banner with Background Image */}
       <div className="relative bg-gradient-to-r from-primary to-primary-light text-white py-32 mt-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
-              ADHD Therapy Center
+              Neuro Perspektiven
             </h1>
             <p className="text-xl opacity-90 animate-fade-in">
               Professional ADHD assessment and treatment
             </p>
           </div>
         </div>
-        <div 
+        <div
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80')",
@@ -49,9 +49,9 @@ const ADHDTherapist = () => {
         {/* Praxis Name and Logo */}
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-primary mb-8">ADHD Zentrum Berlin</h2>
-          <img 
-            src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80" 
-            alt="ADHD Zentrum Logo" 
+          <img
+            src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80"
+            alt="ADHD Zentrum Logo"
             className="w-32 h-32 mx-auto object-contain"
           />
         </div>
@@ -64,11 +64,11 @@ const ADHDTherapist = () => {
           <div>
             <h3 className="text-2xl font-semibold text-primary mb-6">About Us</h3>
             <p className="text-gray-600 mb-8">
-              Our specialized ADHD therapy center provides comprehensive assessment and treatment
+              Our specialized Neuro Perspektiven center provides comprehensive assessment and treatment
               for children, adolescents, and adults. With years of experience and a dedicated team,
               we offer personalized care and support for individuals with ADHD.
             </p>
-            
+
             {/* Team Members */}
             <div className="grid grid-cols-2 gap-6">
               {[
@@ -89,7 +89,7 @@ const ADHDTherapist = () => {
               ))}
             </div>
           </div>
-          
+
           <div>
             <img
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80"

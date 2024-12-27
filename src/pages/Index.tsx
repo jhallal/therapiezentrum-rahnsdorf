@@ -19,8 +19,8 @@ const Index = () => {
       imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80"
     },
     {
-      id: "adhd",
-      title: "ADHD Therapist",
+      id: "neuroperspektiven",
+      title: "Neuro Perspektiven",
       description: "Specialized in diagnosing and treating Attention Deficit Hyperactivity Disorder, our experts provide comprehensive assessment and therapy services for both children and adults struggling with ADHD.",
       imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80"
     },
