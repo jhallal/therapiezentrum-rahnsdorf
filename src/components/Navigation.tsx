@@ -17,7 +17,7 @@ const Navigation = () => {
     <nav className="bg-primary text-white py-4 fixed w-full top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-xl font-bold">Health Center</Link>
+          <Link to="/" className="text-xl font-bold">Therapiezentrum Rahnsdorf</Link>
           
           {/* Mobile menu button */}
           <button 
