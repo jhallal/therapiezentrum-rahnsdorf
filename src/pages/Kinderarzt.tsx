@@ -96,7 +96,7 @@ const Kinderarzt = () => {
                   {openingHours.map((item, index) => (
                     <div 
                       key={index} 
-                      className="flex justify-between items-center py-3 border-b last:border-b-0 hover:bg-gray-50 transition-colors"
+                      className="flex justify-between items-left py-3 border-b last:border-b-0 hover:bg-gray-50 transition-colors"
                     >
                       <span className="font-medium text-primary min-w-[120px]">{item.day}</span>
                       <span className="text-gray-600">{item.hours}</span>
