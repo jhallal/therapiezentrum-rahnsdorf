@@ -8,26 +8,26 @@ const Index = () => {
   const practices = [
     {
       id: "kinderarzt",
-      title: "Kinderarztpraxis",
-      description: "Specialized pediatric care focusing on the health and development of children from birth through adolescence. Our experienced team provides comprehensive medical services, preventive care, and treatment for various childhood conditions.",
+      title: "Kinderarztpraxis Dr. Busse",
+      description: "Spezialisierte Kinderheilkunde mit Fokus auf die Gesundheit und Entwicklung von Kindern von der Geburt bis ins Jugendalter. Unser erfahrenes Team bietet umfassende medizinische Dienstleistungen, Vorsorgeuntersuchungen und Behandlungen für verschiedene Kinderkrankheiten an.",
       imageUrl: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80"
     },
     {
       id: "ergo",
       title: "Ergotherapie",
-      description: "Our occupational therapy practice helps patients develop, recover, and improve the skills needed for daily living and working. We provide personalized treatment plans to enhance independence and quality of life.",
+      description: "Unsere Ergotherapie-Praxis hilft Patienten, die Fähigkeiten zu entwickeln, wiederzuerlangen und zu verbessern, die für das tägliche Leben und Arbeiten erforderlich sind. Wir bieten individuelle Behandlungspläne an, um die Unabhängigkeit und Lebensqualität zu fördern.",
       imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80"
     },
     {
       id: "neuroperspektiven",
       title: "Neuro Perspektiven",
-      description: "Specialized in diagnosing and treating Attention Deficit Hyperactivity Disorder, our experts provide comprehensive assessment and therapy services for both children and adults struggling with ADHD.",
+      description: "Spezialisiert auf die Diagnose und Behandlung von Aufmerksamkeitsdefizit-Hyperaktivitätsstörung (ADHS) bieten unsere Experten umfassende Diagnostik- und Therapiemöglichkeiten für Kinder und Erwachsene, die mit ADHS zu kämpfen haben.",
       imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80"
     },
     {
       id: "physio",
-      title: "Physiotherapie",
-      description: "Our physiotherapy practice offers expert treatment for various physical conditions, helping patients recover from injury, reduce pain, and improve mobility through targeted exercises and manual therapy.",
+      title: "Raum Für Haltung, Bewegung Und Balance",
+      description: "Unsere Physiotherapie-Praxis bietet fachkundige Behandlung für verschiedene körperliche Beschwerden und unterstützt Patienten dabei, sich von Verletzungen zu erholen, Schmerzen zu lindern und die Mobilität durch gezielte Übungen und manuelle Therapie zu verbessern.",
       imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80"
     }
   ];

@@ -6,11 +6,11 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { title: 'Home', href: '/' },
-    { title: 'Kinderarztpraxis', href: '/kinderarzt' },
+    { title: 'Start', href: '/' },
+    { title: 'Kinderarztpraxis Dr. Busse', href: '/kinderarzt' },
     { title: 'Ergotherapie', href: '/ergotherapie' },
     { title: 'Neuro Perspektiven', href: '/neuroperspektiven' },
-    { title: 'Physiotherapie', href: '/physiotherapie' },
+    { title: 'Raum Für Haltung, Bewegung Und Balance', href: '/mandyhaase' },
   ];
 
   return (

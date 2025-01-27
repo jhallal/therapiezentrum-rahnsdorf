@@ -8,7 +8,7 @@ import Impressum from "./pages/Impressum";
 import Kinderarzt from "./pages/Kinderarzt";
 import Ergotherapie from "./pages/Ergotherapie";
 import NeuroPerspektiven from "./pages/NeuroPerspektiven";
-import Physiotherapie from "./pages/Physiotherapie";
+import Physiotherapie from "./pages/MandyHaase";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +24,7 @@ const App = () => (
           <Route path="/kinderarzt" element={<Kinderarzt />} />
           <Route path="/ergotherapie" element={<Ergotherapie />} />
           <Route path="/neuroperspektiven" element={<NeuroPerspektiven />} />
-          <Route path="/physiotherapie" element={<Physiotherapie />} />
+          <Route path="/mandyhaase" element={<Physiotherapie />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
