@@ -6,44 +6,75 @@ const Impressum = () => {
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
       <div className="container mx-auto px-4 py-16 flex-grow">
-        <h1 className="text-4xl font-bold text-primary mb-8">Impressum</h1>
+        <h1 className="text-4xl font-bold text-primary mb-8 animate-fade-in">Impressum</h1>
 
-        <section className="prose max-w-none">
-          <div className="entry-content">
-            <p>Herausgeber dieser Website:<br />
-              Therapiezentrum Rahnsdorf GbR<br />
-              Dr. med. Cornelia Busse<br />
-              Fürstenwalder Allee 266<br />
-              DEUTSCHLAND</p>
-            <p>Tel.: +49306458903<br />
-              Fax: +493064091145<br />
-              E-Mail: kinderarztpraxis@therapiezentrum-rahnsdorf.de<br />
-              Internet: <a href="http://www.therapiezentrum-rahnsdorf.de" rel="nofollow">http://www.therapiezentrum-rahnsdorf.de</a></p>
-            <p>Umsatzsteuer-Identifikationsnummer: 97603241680</p>
-            <p>Zuständige Aufsichtsbehörde:&nbsp; Kassenärztliche Vereinigung von Berlin<br />
-              Zuständige Kammer:&nbsp; <a href="http://www.aerztekammer-berlin.de" target="_blank" rel="noopener">Landesärztekammer Berlin </a><br />
-              Berufsbezeichnung:&nbsp; Fachärztin für Kinder- und Jugendmedizin (verliehen in der Bundesrepublik Deutschland)<br />
-              Berufsrechtliche Regelungen:&nbsp; Sie finden die aktuell gültige Berufsordnung auf der Homepage der Ärztekammer Berlin (www.aerztekammer-berlin.de)</p>
-            <p>Inhaltlich Verantwortlicher gemäß §10 Absatz 3 MDStV:&nbsp; Dr. Cornelia Busse (Anschrift wie oben)</p>
-            <p>Copyright Informationen: Das Copyright für die auf dieser Internetpräsenz veröffentlichten Inhalte bleibt allein beim Autor.</p>
-            <p>Haftungshinweis: Trotz sorgfälltiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind außschließlich deren Betreiber verantwortlich. Diese Internetpräsentation wurde mit äußerster Sorgfalt erstellt.<br />
-              Das gilt selbstverständlich auch für Therapieempfehlungen und Angaben über Arzneimittel und deren Dosierungen. Irrtürmer, Zweideutigkeiten oder fehlerhafte Informationen sind nie völlig auszuschließen. Eine Gewähr für die uneingeschränkte Richtigkeit dieser Daten übernimmt der Inhaber dieser Präsentation nicht. Sämtliche Angaben müssen vom jeweiligen Anwender im Einzelfall eigenverantwortlich auf ihre Richtigkeit geprüft werden. Desweiteren können die auf dieser Website veröffentlichten Informationen keinesfalls ein Gespräch mit einem Arzt/ Facharzt/ Therapeuten ihres Vertrauens ersetzen.</p>
-            <hr />
-            <div id="privpol_div_rich_text_preview" className="uk-width-1-1">
-              <div className="h4">Datenschutzerklärung</div>
-              <p>Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Therapiezentrum Rahnsdorf GbR. Eine Nutzung der Internetseiten der Therapiezentrum Rahnsdorf GbR ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.</p>
-              <p>Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der Datenschutz-Grundverordnung und in Übereinstimmung mit den für die Therapiezentrum Rahnsdorf GbR geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser Datenschutzerklärung möchte unser Unternehmen die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.</p>
-              <p>Die Therapiezentrum Rahnsdorf GbR hat als für die Verarbeitung Verantwortlicher zahlreiche technische und organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der über diese Internetseite verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können Internetbasierte Datenübertragungen grundsätzlich Sicherheitslücken aufweisen, sodass ein absoluter Schutz nicht gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene Daten auch auf alternativen Wegen, beispielsweise telefonisch, an uns zu übermitteln.</p>
-              <div className="h4">1. Begriffsbestimmungen</div>
-              <p>Die Datenschutzerklärung der Therapiezentrum Rahnsdorf GbR beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung (DS-GVO) verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner einfach lesbar und verständlich sein. Um dies zu gewährleisten, möchten wir vorab die verwendeten Begrifflichkeiten erläutern.</p>
-              <p>Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:</p>
-              <ul>
-                <li>
-                  <div className="h4">a)&nbsp;&nbsp;&nbsp; personenbezogene Daten</div>
-                  <p>Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen. Als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind, identifiziert werden kann.</p></li>
-                <li>
-                  <div className="h4">b)&nbsp;&nbsp;&nbsp; betroffene Person</div>
-                  <p>Betroffene Person ist jede identifizierte oder identifizierbare natürliche Person, deren personenbezogene Daten von dem für die Verarbeitung Verantwortlichen verarbeitet werden.</p></li>
+        <section className="prose prose-lg max-w-4xl mx-auto space-y-8">
+          <div className="bg-white rounded-lg shadow-sm p-8 space-y-6">
+            <div className="space-y-4">
+              <p className="text-lg">
+                Herausgeber dieser Website:<br />
+                <strong>Therapiezentrum Rahnsdorf GbR</strong><br />
+                Dr. med. Cornelia Busse<br />
+                Fürstenwalder Allee 266<br />
+                DEUTSCHLAND
+              </p>
+              
+              <p className="text-lg space-y-1">
+                Tel.: <a href="tel:+496458903" className="text-primary hover:text-primary-light transition-colors">+49306458903</a><br />
+                Fax: +493064091145<br />
+                E-Mail: <a href="mailto:kinderarztpraxis@therapiezentrum-rahnsdorf.de" className="text-primary hover:text-primary-light transition-colors">kinderarztpraxis@therapiezentrum-rahnsdorf.de</a><br />
+                Internet: <a href="http://www.therapiezentrum-rahnsdorf.de" rel="nofollow" className="text-primary hover:text-primary-light transition-colors">http://www.therapiezentrum-rahnsdorf.de</a>
+              </p>
+
+              <p className="text-lg">Umsatzsteuer-Identifikationsnummer: 97603241680</p>
+
+              <div className="space-y-2">
+                <p className="text-lg">
+                  Zuständige Aufsichtsbehörde: Kassenärztliche Vereinigung von Berlin<br />
+                  Zuständige Kammer: <a href="http://www.aerztekammer-berlin.de" target="_blank" rel="noopener" className="text-primary hover:text-primary-light transition-colors">Landesärztekammer Berlin</a><br />
+                  Berufsbezeichnung: Fachärztin für Kinder- und Jugendmedizin (verliehen in der Bundesrepublik Deutschland)<br />
+                  Berufsrechtliche Regelungen: Sie finden die aktuell gültige Berufsordnung auf der Homepage der Ärztekammer Berlin (www.aerztekammer-berlin.de)
+                </p>
+              </div>
+
+              <p className="text-lg">Inhaltlich Verantwortlicher gemäß §10 Absatz 3 MDStV: Dr. Cornelia Busse (Anschrift wie oben)</p>
+            </div>
+
+            <div className="border-t border-gray-200 pt-6">
+              <h2 className="text-2xl font-semibold text-primary mb-4">Copyright Informationen</h2>
+              <p className="text-lg">Das Copyright für die auf dieser Internetpräsenz veröffentlichten Inhalte bleibt allein beim Autor.</p>
+            </div>
+
+            <div className="border-t border-gray-200 pt-6">
+              <h2 className="text-2xl font-semibold text-primary mb-4">Haftungshinweis</h2>
+              <p className="text-lg leading-relaxed">
+                Trotz sorgfälltiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind außschließlich deren Betreiber verantwortlich. Diese Internetpräsentation wurde mit äußerster Sorgfalt erstellt.
+                Das gilt selbstverständlich auch für Therapieempfehlungen und Angaben über Arzneimittel und deren Dosierungen. Irrtürmer, Zweideutigkeiten oder fehlerhafte Informationen sind nie völlig auszuschließen. Eine Gewähr für die uneingeschränkte Richtigkeit dieser Daten übernimmt der Inhaber dieser Präsentation nicht. Sämtliche Angaben müssen vom jeweiligen Anwender im Einzelfall eigenverantwortlich auf ihre Richtigkeit geprüft werden. Desweiteren können die auf dieser Website veröffentlichten Informationen keinesfalls ein Gespräch mit einem Arzt/ Facharzt/ Therapeuten ihres Vertrauens ersetzen.
+              </p>
+            </div>
+
+            <div className="border-t border-gray-200 pt-6">
+              <h2 className="text-2xl font-semibold text-primary mb-4">Datenschutzerklärung</h2>
+              <div className="space-y-6">
+                <p className="text-lg leading-relaxed">
+                  Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Therapiezentrum Rahnsdorf GbR. Eine Nutzung der Internetseiten der Therapiezentrum Rahnsdorf GbR ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich.
+                </p>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-primary">1. Begriffsbestimmungen</h3>
+                  <p className="text-lg leading-relaxed">
+                    Die Datenschutzerklärung der Therapiezentrum Rahnsdorf GbR beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung (DS-GVO) verwendet wurden.
+                  </p>
+                  
+                  <ul className="list-disc pl-6 space-y-4">
+                    <li className="text-lg">
+                      <strong>Personenbezogene Daten</strong>
+                      <p className="mt-2">Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.</p>
+                    </li>
+                    <li className="text-lg">
+                      <strong>Betroffene Person</strong>
+                      <p className="mt-2">Betroffene Person ist jede identifizierte oder identifizierbare natürliche Person, deren personenbezogene Daten verarbeitet werden.</p>
+                    </li>
                 <li>
                   <div className="h4">c)&nbsp;&nbsp;&nbsp; Verarbeitung</div>
                   <p>Verarbeitung ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung, das Löschen oder die Vernichtung.</p></li>
@@ -71,16 +102,27 @@ const Impressum = () => {
                 <li>
                   <div className="h4">k)&nbsp;&nbsp;&nbsp; Einwilligung</div>
                   <p>Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten Fall in informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung, mit der die betroffene Person zu verstehen gibt, dass sie mit der Verarbeitung der sie betreffenden personenbezogenen Daten einverstanden ist.</p></li>
-              </ul>
-              <div className="h4">2. Name und Anschrift des für die Verarbeitung Verantwortlichen</div>
-              <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:</p>
-              <p>Therapiezentrum Rahnsdorf GbR<br />
-                Waldschützpfad 21<br />
-                12589 Berlin<br />
-                Deutschland</p>
-              <p>Tel.: 0306458903</p>
-              <p>E-Mail: cb1204@arcor.de</p>
-              <p>Website: <a href="http://www.therapiezentrum-rahnsdorf.de" rel="nofollow">http://www.therapiezentrum-rahnsdorf.de</a></p>
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-primary">2. Name und Anschrift des für die Verarbeitung Verantwortlichen</h3>
+                  <p className="text-lg">
+                    Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:
+                  </p>
+                  <p className="text-lg">
+                    Therapiezentrum Rahnsdorf GbR<br />
+                    Waldschützpfad 21<br />
+                    12589 Berlin<br />
+                    Deutschland
+                  </p>
+                  <p className="text-lg">
+                    Tel.: 0306458903<br />
+                    E-Mail: cb1204@arcor.de<br />
+                    Website: <a href="http://www.therapiezentrum-rahnsdorf.de" rel="nofollow" className="text-primary hover:text-primary-light transition-colors">http://www.therapiezentrum-rahnsdorf.de</a>
+                  </p>
+                </div>
+
               <div className="h4">3. Erfassung von allgemeinen Daten und Informationen</div>
               <p>Die Internetseite der Therapiezentrum Rahnsdorf GbR erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, welche über ein zugreifendes System auf unserer Internetseite angesteuert werden, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von Angriffen auf unsere informationstechnologischen Systeme dienen.</p>
               <p>Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die Therapiezentrum Rahnsdorf GbR keine Rückschlüsse auf die betroffene Person. Diese Informationen werden vielmehr benötigt, um (1) die Inhalte unserer Internetseite korrekt auszuliefern, (2) die Inhalte unserer Internetseite sowie die Werbung für diese zu optimieren, (3) die dauerhafte Funktionsfähigkeit unserer informationstechnologischen Systeme und der Technik unserer Internetseite zu gewährleisten sowie (4) um Strafverfolgungsbehörden im Falle eines Cyberangriffes die zur Strafverfolgung notwendigen Informationen bereitzustellen. Diese anonym erhobenen Daten und Informationen werden durch die Therapiezentrum Rahnsdorf GbR daher einerseits statistisch und ferner mit dem Ziel ausgewertet, den Datenschutz und die Datensicherheit in unserem Unternehmen zu erhöhen, um letztlich ein optimales Schutzniveau für die von uns verarbeiteten personenbezogenen Daten sicherzustellen. Die anonymen Daten der Server-Logfiles werden getrennt von allen durch eine betroffene Person angegebenen personenbezogenen Daten gespeichert.</p>
@@ -175,6 +217,7 @@ const Impressum = () => {
               <div className="h4">13. Bestehen einer automatisierten Entscheidungsfindung</div>
               <p>Als verantwortungsbewusstes Unternehmen verzichten wir auf eine automatische Entscheidungsfindung oder ein Profiling.</p>
               <p>Diese Datenschutzerklärung wurde durch den Datenschutzerklärungs-Generator der DGD Deutsche Gesellschaft für Datenschutz GmbH, die als <a href="https://dg-datenschutz.de/datenschutz-dienstleistungen/externer-datenschutzbeauftragter/">Externer Datenschutzbeauftragter Fürth</a> tätig ist, in Kooperation mit dem <a href="https://www.wbs-law.de/it-recht/datenschutzrecht/">IT- und Datenschutzrecht Anwalt Christian Solmecke</a> erstellt.</p>
+              </div>
             </div>
           </div>
         </section>
