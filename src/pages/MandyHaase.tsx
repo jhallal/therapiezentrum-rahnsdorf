@@ -9,7 +9,7 @@ const Physiotherapie = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
-              Physiotherapie
+            Raum Für Haltung, Bewegung Und Balance
             </h1>
             <p className="text-xl opacity-90 animate-fade-in">
               Professional physiotherapy services for your well-being
