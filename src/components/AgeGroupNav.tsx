@@ -10,8 +10,8 @@ const AgeGroupNav = () => {
             <Button
               className="group relative overflow-hidden rounded-xl bg-primary hover:bg-primary-light transition-colors duration-300 p-12 text-center text-white w-full h-auto"
             >
-              <h2 className="text-3xl font-bold mb-4">Erwachsene</h2>
-              <p className="opacity-90">Spezialisierte Betreuung erwachsener Patienten</p>
+              <h2 className="text-3xl font-bold">Erwachsene</h2>
+              <p className="text-sm mt-4 opacity-90">Spezialisierte Betreuung erwachsener Patienten</p>
             </Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-md">
@@ -59,8 +59,8 @@ const AgeGroupNav = () => {
             <Button
               className="group relative overflow-hidden rounded-xl bg-secondary hover:bg-secondary-light transition-colors duration-300 p-12 text-center text-white w-full h-auto"
             >
-              <h2 className="text-3xl font-bold mb-4">Kinder</h2>
-              <p className="opacity-90">Kompetente pädiatrische Gesundheitsdienstleistungen</p>
+              <h2 className="text-3xl font-bold">Kinder</h2>
+              <p className="text-sm mt-4 opacity-90">Kompetente pädiatrische Gesundheitsdienstleistungen</p>
             </Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-md">
