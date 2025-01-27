@@ -92,10 +92,13 @@ const Kinderarzt = () => {
             <h2 className="text-3xl font-bold text-primary mb-8">Öffnungszeiten</h2>
             <Card>
               <CardContent className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="max-w-md mx-auto">
                   {openingHours.map((item, index) => (
-                    <div key={index} className="flex justify-between items-center py-2 border-b last:border-b-0">
-                      <span className="font-medium">{item.day}</span>
+                    <div 
+                      key={index} 
+                      className="flex justify-between items-center py-3 border-b last:border-b-0 hover:bg-gray-50 transition-colors"
+                    >
+                      <span className="font-medium text-primary min-w-[120px]">{item.day}</span>
                       <span className="text-gray-600">{item.hours}</span>
                     </div>
                   ))}
