@@ -8,7 +8,7 @@ const Navigation = () => {
   const menuItems = [
     { title: 'Start', href: '/' },
     { title: 'Kinderarztpraxis Dr. Busse', href: '/kinderarzt' },
-    { title: 'Ergotherapie', href: '/ergotherapie' },
+    { title: 'Ergotherapie Busse', href: '/ergotherapiebusse' },
     { title: 'Neuro Perspektiven', href: '/neuroperspektiven' },
     { title: 'Raum Für Haltung, Bewegung Und Balance', href: '/mandyhaase' },
   ];

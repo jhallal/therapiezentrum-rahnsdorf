@@ -9,14 +9,14 @@ const Index = () => {
     {
       id: "kinderarzt",
       title: "Kinderarztpraxis Dr. Busse",
-      description: "Spezialisierte Kinderheilkunde mit Fokus auf die Gesundheit und Entwicklung von Kindern von der Geburt bis ins Jugendalter. Unser erfahrenes Team bietet umfassende medizinische Dienstleistungen, Vorsorgeuntersuchungen und Behandlungen für verschiedene Kinderkrankheiten an.",
-      imageUrl: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80"
+      description: "Fachärztin für Kinder- und Jugendmedizin. Psychotherapeutin (tiefenpsychologisch fundiert).",
+      imageUrl: "https://public.picdrop.com/preview/t/HQTKRXsbNzBqfmOqD3En_1600.jpg?auto=format&fit=crop&q=80"
     },
     {
       id: "ergo",
-      title: "Ergotherapie",
-      description: "Unsere Ergotherapie-Praxis hilft Patienten, die Fähigkeiten zu entwickeln, wiederzuerlangen und zu verbessern, die für das tägliche Leben und Arbeiten erforderlich sind. Wir bieten individuelle Behandlungspläne an, um die Unabhängigkeit und Lebensqualität zu fördern.",
-      imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80"
+      title: "Ergotherapie Busse",
+      description: "Staatlich anerkannte Ergotherapeutin.",
+      imageUrl: "https://public.picdrop.com/preview/t/ioFyLNjjQVrmwjP1s8ZW_1200.jpg?auto=format&fit=crop&q=80"
     },
     {
       id: "neuroperspektiven",
