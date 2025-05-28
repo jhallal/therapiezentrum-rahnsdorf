@@ -134,16 +134,14 @@ const Ergotherapie = () => {
           {/* Team Section */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-primary mb-8 text-center">Unser Team</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {teamMembers.map((member) => (
-                <div key={member.name} className="flex flex-col items-center space-y-3">
-                  <div className="group">
+                <div key={member.name} className="flex items-center space-x-4">
                     <Avatar className="w-32 h-32 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
                       <AvatarImage src={member.image} alt={member.name} className="object-cover" />
                       <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                     </Avatar>
-                  </div>
-                  <div className="text-center">
+                  <div>
                     <h3 className="font-semibold text-primary">{member.name}</h3>
                     <p className="text-sm text-gray-600">{member.role}</p>
                     <p className="text-sm text-gray-600">{member.location}</p>
