@@ -21,9 +21,7 @@ const NeuroPerspektiven = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
-
-      {/* Banner with Background Image */}
-      <div className="relative bg-gradient-to-r from-primary to-primary-light text-white py-32 mt-16">
+      <div className="relative bg-gradient-to-r from-primary to-primary-light text-white py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
@@ -35,9 +33,9 @@ const NeuroPerspektiven = () => {
           </div>
         </div>
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute bottom-0 right-0 w-1/3 h-full opacity-20 hidden md:block"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80')",
+            backgroundImage: "url('/images/neuroperspektiven.jpg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -46,14 +44,16 @@ const NeuroPerspektiven = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
-        {/* Praxis Name and Logo */}
+        {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-primary mb-8">Marianne Jouanneaux</h2>
-          <img
-            src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80"
-            alt="Neuro Perspektiven Logo"
-            className="w-32 h-32 mx-auto object-contain"
-          />
+          <h1 className="text-4xl font-bold text-primary mb-4">Marianne Jouanneaux</h1>
+          <div className="w-80 h-80 mx-auto mb-5 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <img
+              src="/images/marianne-Jouanneaux.jpg"
+              alt="Neuro Perspektiven - Marianne Jouanneaux"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+            />
+          </div>
         </div>
 
         {/* Modern Section Separator */}
@@ -64,16 +64,16 @@ const NeuroPerspektiven = () => {
           <div>
             <h3 className="text-2xl font-semibold text-primary mb-6">Über Uns</h3>
             <p className="text-gray-600 mb-8">
-              Unser spezialisiertes ADHS-Therapiezentrum bietet umfassende Diagnostik und Behandlung für Kinder, Jugendliche und Erwachsene. Mit langjähriger Erfahrung und einem engagierten Team bieten wir individuelle Betreuung und Unterstützung für Menschen mit ADHS.
+              Unser spezialisiertes ADHS-Therapiezentrum bietet umfassende Diagnostik und Behandlung für Jugendliche und Erwachsene. Mit langjähriger Erfahrung und einem engagierten Team bieten wir individuelle Betreuung und Unterstützung für Menschen mit ADHS.
             </p>
 
             {/* Team Members */}
             <div className="grid grid-cols-2 gap-6">
               {[
-                { name: "Dr. Sarah Schmidt", role: "Lead Therapist" },
-                { name: "Michael Weber", role: "ADHD Specialist" },
-                { name: "Lisa Mueller", role: "Child Psychologist" },
-                { name: "Thomas Berg", role: "Family Therapist" }
+                { name: "Team Member Name", role: "Role" },
+                { name: "Team Member Name", role: "Role" },
+                { name: "Team Member Name", role: "Role" },
+                { name: "Team Member Name", role: "Roles" }
               ].map((member) => (
                 <div key={member.name} className="text-center">
                   <img
@@ -90,8 +90,8 @@ const NeuroPerspektiven = () => {
 
           <div>
             <img
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80"
-              alt="Our Praxis"
+              src="/images/Marianne_Jouanneaux-00596.jpg"
+              alt="Marianne Jouanneaux"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -160,18 +160,18 @@ const NeuroPerspektiven = () => {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80"
-              alt="Praxis Leader"
+              src="/images/Marianne_Jouanneaux-00538.jpg"
+              alt="Marianne Jouanneaux"
               className="w-full h-80 object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>
 
         {/* Modern Section Separator */}
-        <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
+        {/* <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" /> */}
 
         {/* More About Us */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h3 className="text-2xl font-semibold text-primary mb-6">More About Us</h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -193,13 +193,13 @@ const NeuroPerspektiven = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Modern Section Separator */}
-        <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
+        {/* <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" /> */}
 
         {/* Newsletter Subscription */}
-        <div className="bg-gray-50 p-8 rounded-lg">
+        {/* <div className="bg-gray-50 p-8 rounded-lg">
           <h3 className="text-2xl font-semibold text-primary mb-6">Subscribe to Our Newsletter</h3>
           <p className="text-gray-600 mb-6">
             Stay updated with the latest news, research, and events from our ADHD center.
@@ -215,7 +215,7 @@ const NeuroPerspektiven = () => {
             />
             <Button type="submit" className="text-white">Subscribe</Button>
           </form>
-        </div>
+        </div> */}
       </div>
 
       <Footer />

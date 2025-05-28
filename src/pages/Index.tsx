@@ -22,7 +22,7 @@ const Index = () => {
       id: "neuroperspektiven",
       title: "Neuro Perspektiven",
       description: "Spezialisiert auf die Diagnose und Behandlung von Aufmerksamkeitsdefizit-Hyperaktivitätsstörung (ADHS) bieten unsere Experten umfassende Diagnostik- und Therapiemöglichkeiten für Kinder und Erwachsene, die mit ADHS zu kämpfen haben.",
-      imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80"
+      imageUrl: "/images/neuroperspektiven.jpg"
     },
     {
       id: "physiotherapie",
