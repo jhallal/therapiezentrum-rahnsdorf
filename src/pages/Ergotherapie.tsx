@@ -137,10 +137,12 @@ const Ergotherapie = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {teamMembers.map((member) => (
                 <div key={member.name} className="flex items-center space-x-4">
+                  <div className="group">
                     <Avatar className="w-32 h-32 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
                       <AvatarImage src={member.image} alt={member.name} className="object-cover" />
                       <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                     </Avatar>
+                  </div>
                   <div>
                     <h3 className="font-semibold text-primary">{member.name}</h3>
                     <p className="text-sm text-gray-600">{member.role}</p>
@@ -168,7 +170,7 @@ const Ergotherapie = () => {
                 </CardContent>
               </Card>
               <Card>
-              <CardContent className="p-6">
+                <CardContent className="p-6">
                   <div className="space-y-4">
                     <h3 className="font-semibold text-primary">Praxis Friedrichshagen</h3>
                     <p>Müggelseedamm 221</p>

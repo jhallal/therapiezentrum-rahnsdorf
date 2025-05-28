@@ -152,10 +152,12 @@ const Kinderarztpraxis = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {teamMembers.map((member, index) => (
                 <div key={index} className="flex items-center space-x-4">
-                  <Avatar className="h-32 w-32 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
-                    <AvatarImage src={member.imageUrl} />
-                    <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                  </Avatar>
+                  <div className="group">
+                    <Avatar className="h-32 w-32 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
+                      <AvatarImage src={member.imageUrl} />
+                      <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                    </Avatar>
+                  </div>
                   <div>
                     <h3 className="font-semibold">{member.name}</h3>
                     <p className="text-sm text-gray-600">{member.role}</p>
