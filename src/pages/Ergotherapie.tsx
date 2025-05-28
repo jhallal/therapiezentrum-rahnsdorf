@@ -163,9 +163,9 @@ const Ergotherapie = () => {
                     <h3 className="font-semibold text-primary">Praxis Rahnsdorf</h3>
                     <p>Waldschützpfad 21</p>
                     <p>12589 Berlin</p>
-                    <p>Tel.: <a href="tel:+493064091134" className="hover:text-primary transition-colors">+493064091134</a></p>
+                    <p>Tel.: <a href="tel:+493064091134" className="hover:underline">+493064091134</a></p>
                     <p>Fax: +493053149490</p>
-                    <p>Mail: <a href="mailto:ergotherapiepraxisbusse@gmail.com" className="hover:text-primary transition-colors">ergotherapiepraxisbusse@gmail.com</a></p>
+                    <p>Mail: <a href="mailto:ergotherapiepraxisbusse@gmail.com" className="hover:underline">ergotherapiepraxisbusse@gmail.com</a></p>
                   </div>
                 </CardContent>
               </Card>
@@ -175,9 +175,9 @@ const Ergotherapie = () => {
                     <h3 className="font-semibold text-primary">Praxis Friedrichshagen</h3>
                     <p>Müggelseedamm 221</p>
                     <p>12587 Berlin</p>
-                    <p>Tel.: <a href="tel:+493012349938" className="hover:text-primary transition-colors">+493012349938</a></p>
+                    <p>Tel.: <a href="tel:+493012349938" className="hover:underline">+493012349938</a></p>
                     <p>Fax: +493070801627</p>
-                    <p>Mail: <a href="mailto:ergotherapiepraxisbusse@gmail.com" className="hover:text-primary transition-colors">ergotherapiepraxisbusse@gmail.com</a></p>
+                    <p>Mail: <a href="mailto:ergotherapiepraxisbusse@gmail.com" className="hover:underline">ergotherapiepraxisbusse@gmail.com</a></p>
                   </div>
                 </CardContent>
               </Card>

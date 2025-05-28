@@ -174,9 +174,9 @@ const Kinderarztpraxis = () => {
                   <div className="space-y-4">
                     <p>Fürstenwalder Allee 266</p>
                     <p>12589 Berlin</p>
-                    <p>Tel.: +49306458903</p>
+                    <p>Tel.: <a href="tel:+49306458903" className="hover:underline">+49306458903</a></p>
                     <p>Fax: +493064091145</p>
-                    <p>Mail: kinderarztpraxis@therapiezentrum-rahnsdorf.de</p>
+                    <p>Mail: <a href="mailto:kinderarztpraxis@therapiezentrum-rahnsdorf.de" className="hover:underline">kinderarztpraxis@therapiezentrum-rahnsdorf.de</a></p>
                     <p className="font-bold mt-4">Wir bitten in jedem Fall dringend um telefonische Terminabsprache!!!</p>
                   </div>
                 </CardContent>
@@ -186,13 +186,13 @@ const Kinderarztpraxis = () => {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-4">Im Notfall</h3>
                   <div className="space-y-4">
-                    <p>Dr. med. Cornelia Busse (mobil): +491749908068</p>
+                    <p>Dr. med. Cornelia Busse (mobil): <a href="tel:+491749908068" className="hover:underline">+491749908068</a></p>
                     <p>Kassenärztlicher Notdienst: 116117</p>
 
                     <div className="mt-6">
                       <p className="font-semibold">Klinik für Kinder-und Jugendmedizin Sanaklinikum</p>
                       <p>Fanningerstraße 32, 10365 Berlin</p>
-                      <p>Tel.: +493055185104</p>
+                      <p>Tel.: <a href="tel:+493055185104" className="hover:underline">+493055185104</a></p>
                     </div>
 
                     <div className="mt-6">
@@ -200,12 +200,12 @@ const Kinderarztpraxis = () => {
                       <p>Salvador-Allende-Straße 2-8</p>
                       <p>Rettungsstelle</p>
                       <p>12555 Berlin</p>
-                      <p>Tel.: +493030353100</p>
+                      <p>Tel.: <a href="tel:+493030353100" className="hover:underline">+493030353100</a></p>
                     </div>
 
                     <div className="mt-6">
                       <p className="font-semibold">Berliner Krisendienst (für psychische Notfälle)</p>
-                      <p>+49303906380</p>
+                      <p><a href="tel:+49303906380" className="hover:underline">+49303906380</a></p>
                     </div>
                   </div>
                 </CardContent>
