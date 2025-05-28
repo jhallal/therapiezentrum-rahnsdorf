@@ -1,34 +1,40 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Ergotherapie = () => {
   const teamMembers = [
     {
-      name: "Sarah Schmidt",
+      name: "Katharina Hallal",
       role: "Ergotherapeutin",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+      location: "Praxis Rahnsdorf",
+      image: "/images/katharina-hallal-ergotherapeutin.jpg"
     },
     {
-      name: "Michael Weber",
+      name: "Roman Koppe",
       role: "Ergotherapeut",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+      location: "Praxis Friedrichshagen",
+      image: "/images/roman-koppe.jpg"
     },
     {
-      name: "Lisa Müller",
+      name: "Katharina Karsten",
       role: "Ergotherapeutin",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e"
+      location: "Praxis Friedrichshagen",
+      image: "/images/katharina-karsten.jpg"
     },
     {
-      name: "Thomas Klein",
-      role: "Ergotherapeut",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+      name: "Bianca Klavehn",
+      role: "Ergotherapeutin",
+      location: "Praxis Rahnsdorf & Friedrichshagen",
+      image: ""
     }
     ,
     {
-      name: "Thomas Klein",
-      role: "Ergotherapeut",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+      name: "Agnes Equit",
+      role: "Bürofachkraft",
+      location: "Praxis Rahnsdorf",
+      image: ""
     }
   ];
 
@@ -39,17 +45,17 @@ const Ergotherapie = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
-              Ergotherapie
+              Ergotherapie Busse
             </h1>
             <p className="text-xl opacity-90 animate-fade-in">
-              Professional ergotherapy services for your well-being
+              Ergotherapeutische Leistungen für Kinder und Erwachsene
             </p>
           </div>
         </div>
-        <div 
+        <div
           className="absolute bottom-0 right-0 w-1/3 h-full opacity-20 hidden md:block"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80')",
+            backgroundImage: "url('/images/ergotherapie-busse-2.jpg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -60,41 +66,44 @@ const Ergotherapie = () => {
         <div className="animate-fade-in">
           {/* Header Section */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold text-primary mb-4">Anna Wagner</h1>
-            <div className="relative md:w-1/2 h-80 mx-auto mb-8 group">
+            <h1 className="text-4xl font-bold text-primary mb-4">Katharina Hallal</h1>
+            <div className="w-80 h-80 mx-auto mb-5 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
-                alt="Anna Wagner"
-                className="w-full h-full object-cover rounded-lg shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
+                src="/images/katharina-hallal.jpg"
+                alt="Ergotherapeutin Katharina Hallal"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
               />
-              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-all duration-300 rounded-lg" />
             </div>
             <div className="space-y-2">
-              <p className="text-xl text-gray-600">Staatlich anerkannte Ergotherapeutin</p>
-              <p className="text-xl text-gray-600">Master of Science in Occupational Therapy</p>
-              <p className="text-xl text-gray-600">Zertifizierte Handtherapeutin</p>
+              <p className="text-xl text-gray-600">Staatlich geprüfte Ergotherapeutin</p>
+              <p className="text-xl text-gray-600">Bachelor of Arts (Medizinalfachberufe)</p>
+              <p className="text-xl text-gray-600">Studentin der Psychotherapiewissenschaften</p>
             </div>
           </div>
 
           {/* Services Section */}
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-primary mb-6">Angebot</h2>
+            <h2 className="text-2xl font-bold text-primary mb-8">Angebot</h2>
             <ul className="grid md:grid-cols-2 gap-4 text-gray-600">
               <li className="flex items-center space-x-2">
                 <span className="w-2 h-2 bg-secondary rounded-full"></span>
-                <span>Motorisch-funktionelle Behandlung</span>
+                <span>Soziales Kompetenztraining</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-2 h-2 bg-secondary rounded-full"></span>
-                <span>Sensomotorisch-perzeptive Behandlung</span>
+                <span>Neurofeedback</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-2 h-2 bg-secondary rounded-full"></span>
-                <span>Neuropsychologisch orientierte Behandlung</span>
+                <span>Behandlung von Neurologischen Störungen</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-2 h-2 bg-secondary rounded-full"></span>
-                <span>Psychisch-funktionelle Behandlung</span>
+                <span>Behandlung von Entwicklungsstörungen und -verzögerungen</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2 h-2 bg-secondary rounded-full"></span>
+                <span>Sensorische Integrationstherapie</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-2 h-2 bg-secondary rounded-full"></span>
@@ -102,8 +111,23 @@ const Ergotherapie = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-2 h-2 bg-secondary rounded-full"></span>
-                <span>Hilfsmittelversorgung und -beratung</span>
+                <span>Hörtraining nach Benaudira</span>
               </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2 h-2 bg-secondary rounded-full"></span>
+                <span>Hirnleistungstraining</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2 h-2 bg-secondary rounded-full"></span>
+                <span>Hausbesuche</span>
+              </li>
+            </ul>
+            <h3 className="text-xl font-semibold mt-8">Videounterstützte Problemanalysen sowie Lern- und Verhaltenstrainings (nach dem IntraActPlus-Konzept) bei:</h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <li>Lern- und Leistungsstörungen</li>
+              <li>Teilleistungsstörungen (Lese-Rechtschreibstörung / Dyskalkulie)</li>
+              <li>Aufmerksamkeitsstörungen (ADS/ADHS)</li>
+              <li>Verhaltensproblemen</li>
             </ul>
           </div>
 
@@ -122,6 +146,7 @@ const Ergotherapie = () => {
                   <div className="text-center">
                     <h3 className="font-semibold text-primary">{member.name}</h3>
                     <p className="text-sm text-gray-600">{member.role}</p>
+                    <p className="text-sm text-gray-600">{member.location}</p>
                   </div>
                 </div>
               ))}
@@ -129,16 +154,35 @@ const Ergotherapie = () => {
           </div>
 
           {/* Contact Section */}
-          <div>
-            <h2 className="text-2xl font-bold text-primary mb-6">Kontaktdaten</h2>
-            <div className="text-gray-600 space-y-2">
-              <p>Streetname Allee 36</p>
-              <p>10000 Berlin</p>
-              <p>Tel.: <a href="tel:+491700000000" className="hover:text-primary transition-colors">+491700000000</a></p>
-              <p>Mail: <a href="mailto:info@ergotherapiesite-berlin.de" className="hover:text-primary transition-colors">info@ergotherapiesite-berlin.de</a></p>
-              <p>Website: <a href="http://www.ergotherapiesite-berlin.de" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">www.ergotherapiesite-berlin.de</a></p>
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-primary mb-8">Kontaktdaten</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card>
+                <CardContent className="p-6">
+                  <div className="space-y-4">
+                    <h3 className="font-semibold text-primary">Praxis Rahnsdorf</h3>
+                    <p>Waldschützpfad 21</p>
+                    <p>12589 Berlin</p>
+                    <p>Tel.: <a href="tel:+493064091134" className="hover:text-primary transition-colors">+493064091134</a></p>
+                    <p>Fax: +493053149490</p>
+                    <p>Mail: <a href="mailto:ergotherapiepraxisbusse@gmail.com" className="hover:text-primary transition-colors">ergotherapiepraxisbusse@gmail.com</a></p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+              <CardContent className="p-6">
+                  <div className="space-y-4">
+                    <h3 className="font-semibold text-primary">Praxis Friedrichshagen</h3>
+                    <p>Müggelseedamm 221</p>
+                    <p>12587 Berlin</p>
+                    <p>Tel.: <a href="tel:+493012349938" className="hover:text-primary transition-colors">+493012349938</a></p>
+                    <p>Fax: +493070801627</p>
+                    <p>Mail: <a href="mailto:ergotherapiepraxisbusse@gmail.com" className="hover:text-primary transition-colors">ergotherapiepraxisbusse@gmail.com</a></p>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
-          </div>
+          </section>
         </div>
       </div>
       <Footer />

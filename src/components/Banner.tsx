@@ -14,7 +14,7 @@ const Banner = () => {
       <div
         className="absolute bottom-0 right-0 w-1/3 h-full opacity-20"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80')",
+          backgroundImage: "url('https://public.picdrop.com/preview/t/ORufQCeyVOa1wu34uthe_1200.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}

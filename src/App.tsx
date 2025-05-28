@@ -5,30 +5,60 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Impressum from "./pages/Impressum";
-import Kinderarzt from "./pages/Kinderarzt";
+import Kinderarztpraxis from "./pages/Kinderarztpraxis";
 import Ergotherapie from "./pages/Ergotherapie";
 import NeuroPerspektiven from "./pages/NeuroPerspektiven";
-import Physiotherapie from "./pages/MandyHaase";
+import Physiotherapie from "./pages/Physiotherapie";
 
-const queryClient = new QueryClient();
+// Create a client that persists between renders
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false,
+      refetchOnMount: false,
+      refetchOnWindowFocus: false,
+      refetchOnReconnect: false
+    },
+  },
+});
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/impressum" element={<Impressum />} />
-          <Route path="/kinderarzt" element={<Kinderarzt />} />
-          <Route path="/ergotherapie" element={<Ergotherapie />} />
-          <Route path="/neuroperspektiven" element={<NeuroPerspektiven />} />
-          <Route path="/mandyhaase" element={<Physiotherapie />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+// Router that works in both browser and SSR environments
+const Router = ({ children }) => {
+  // Check if we're in the browser or SSR
+  const isBrowser = typeof window !== 'undefined';
+  
+  if (isBrowser) {
+    return <BrowserRouter>{children}</BrowserRouter>;
+  }
+  
+  // In SSR context, we don't need a router wrapper
+  return <>{children}</>;
+};
+
+const App = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        {/* Conditionally render these components only in browser */}
+        {typeof window !== 'undefined' && (
+          <>
+            <Toaster />
+            <Sonner />
+          </>
+        )}
+        <Router>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/kinderarztpraxis" element={<Kinderarztpraxis />} />
+            <Route path="/ergotherapiebusse" element={<Ergotherapie />} />
+            <Route path="/neuroperspektiven" element={<NeuroPerspektiven />} />
+            <Route path="/raum-fur-haltung-bewegung-und-balance" element={<Physiotherapie />} />
+          </Routes>
+        </Router>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

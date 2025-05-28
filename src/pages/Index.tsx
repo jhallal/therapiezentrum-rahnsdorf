@@ -10,13 +10,13 @@ const Index = () => {
       id: "kinderarzt",
       title: "Kinderarztpraxis Dr. Busse",
       description: "Fachärztin für Kinder- und Jugendmedizin. Psychotherapeutin (tiefenpsychologisch fundiert).",
-      imageUrl: "https://public.picdrop.com/preview/t/HQTKRXsbNzBqfmOqD3En_1600.jpg?auto=format&fit=crop&q=80"
+      imageUrl: "/images/dr.busse-praxis.jpg"
     },
     {
-      id: "ergo",
+      id: "ergotherapie",
       title: "Ergotherapie Busse",
       description: "Staatlich anerkannte Ergotherapeutin.",
-      imageUrl: "https://public.picdrop.com/preview/t/ioFyLNjjQVrmwjP1s8ZW_1200.jpg?auto=format&fit=crop&q=80"
+      imageUrl: "/images/ergotherapie-busse.jpg"
     },
     {
       id: "neuroperspektiven",
@@ -25,10 +25,10 @@ const Index = () => {
       imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80"
     },
     {
-      id: "physio",
+      id: "physiotherapie",
       title: "Raum Für Haltung, Bewegung Und Balance",
-      description: "Unsere Physiotherapie-Praxis bietet fachkundige Behandlung für verschiedene körperliche Beschwerden und unterstützt Patienten dabei, sich von Verletzungen zu erholen, Schmerzen zu lindern und die Mobilität durch gezielte Übungen und manuelle Therapie zu verbessern.",
-      imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80"
+      description: "Staatlich geprüfte Physiotherapeutin",
+      imageUrl: "/images/Raum Für Haltung, Bewegung Und Balance.jpg"
     }
   ];
 

@@ -9,17 +9,17 @@ const Physiotherapie = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
-            Raum Für Haltung, Bewegung Und Balance
+              Raum Für Haltung, Bewegung Und Balance
             </h1>
             <p className="text-xl opacity-90 animate-fade-in">
-              Professional physiotherapy services for your well-being
+              Physiotherapeutin und CANTIENICA Trainerin
             </p>
           </div>
         </div>
-        <div 
+        <div
           className="absolute bottom-0 right-0 w-1/3 h-full opacity-20 hidden md:block"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80')",
+            backgroundImage: "url('/images/cantienica-mandy-haase.jpg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -29,18 +29,19 @@ const Physiotherapie = () => {
       <div className="container mx-auto px-4 py-24">
         <div className="animate-fade-in">
           {/* Header Section */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-primary mb-4">Name of the Therapist</h1>
-            <div className="relative md:w-1/2 h-80 mx-auto mb-8 group">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl font-bold text-primary mb-4">Mandy Haase</h1>
+            <div className="w-80 h-80 mx-auto mb-5 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80"
-                alt="Name of the Therapist"
-                className="w-full h-full object-cover rounded-lg shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
+                src="/images/mandy-haase.jpg"
+                alt="Mandy Haase"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
               />
-              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-all duration-300 rounded-lg" />
             </div>
-            <p className="text-xl text-gray-600">Staatlich geprüfte Physiotherapeutin</p>
+            <div className="space-y-2">
+              <p className="text-xl text-gray-600">Staatlich geprüfte Physiotherapeutin</p>
             <p className="text-xl text-gray-600">Bachelor of Health</p>
+            </div>
           </div>
 
           {/* Main Content Grid */}
@@ -107,11 +108,11 @@ const Physiotherapie = () => {
           <div>
             <h2 className="text-2xl font-bold text-primary mb-4">Kontaktdaten</h2>
             <div className="text-gray-600 space-y-2">
-              <p>Street Number - 0000</p>
-              <p>00000 Berlin</p>
-              <p>Tel.: <a href="tel:+490000000" className="hover:underline">+490000000</a></p>
-              <p>Mail: <a href="mailto:name@mail.de" className="hover:underline">name@mail.de</a></p>
-              <p>Website: <a href="http://www.website-cantienica.de" target="_blank" rel="noopener noreferrer" className="hover:underline">www.website-cantienica.de</a></p>
+              <p>Fürstenwalder Allee 36</p>
+              <p>12589 Berlin</p>
+              <p>Tel.: <a href="tel:+491708088110" className="hover:underline">+491708088110</a></p>
+              <p>Mail: <a href="mailto:mandy-haase@t-online.de" className="hover:underline">mandy-haase@t-online.de</a></p>
+              <p>Website: <a href="https://www.aufgespannt.de" target="_blank" rel="noopener noreferrer" className="hover:underline">https://www.aufgespannt.de</a></p>
             </div>
           </div>
         </div>

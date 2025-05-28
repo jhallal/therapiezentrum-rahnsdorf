@@ -7,10 +7,10 @@ const Navigation = () => {
 
   const menuItems = [
     { title: 'Start', href: '/' },
-    { title: 'Kinderarztpraxis Dr. Busse', href: '/kinderarzt' },
+    { title: 'Kinderarztpraxis Dr. Busse', href: '/kinderarztpraxis' },
     { title: 'Ergotherapie Busse', href: '/ergotherapiebusse' },
     { title: 'Neuro Perspektiven', href: '/neuroperspektiven' },
-    { title: 'Raum Für Haltung, Bewegung Und Balance', href: '/mandyhaase' },
+    { title: 'Raum Für Haltung, Bewegung Und Balance', href: '/raum-fur-haltung-bewegung-und-balance' },
   ];
 
   return (
