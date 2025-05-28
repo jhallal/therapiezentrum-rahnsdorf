@@ -84,7 +84,20 @@ const Ergotherapie = () => {
           {/* Services Section */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-primary mb-8">Angebot</h2>
-            <ul className="grid md:grid-cols-2 gap-4 text-gray-600">
+            <h3 className="text-xl font-semibold mt-8"></h3>
+            <ul className="grid md:grid-cols-1 gap-4 text-gray-600">
+              <li className="flex items-center space-x-2">
+                <span className="w-2 h-2 bg-secondary rounded-full"></span>
+                <span>Videounterstützte Problemanalysen sowie Lern- und Verhaltenstrainings (<a target="_blank" href="http://www.intraactplus.de" className="hover:underline">nach dem IntraActPlus-Konzept</a>) bei:</span>
+              </li>
+            </ul>
+            <ul className="list-disc list-inside pl-5 pb-5 pt-3 space-y-2 text-gray-700">
+              <li>Lern- und Leistungsstörungen</li>
+              <li>Teilleistungsstörungen (Lese-Rechtschreibstörung / Dyskalkulie)</li>
+              <li>Aufmerksamkeitsstörungen (ADS/ADHS)</li>
+              <li>Verhaltensproblemen</li>
+            </ul>
+            <ul className="grid md:grid-cols-1 gap-4 text-gray-600">
               <li className="flex items-center space-x-2">
                 <span className="w-2 h-2 bg-secondary rounded-full"></span>
                 <span>Soziales Kompetenztraining</span>
@@ -121,13 +134,6 @@ const Ergotherapie = () => {
                 <span className="w-2 h-2 bg-secondary rounded-full"></span>
                 <span>Hausbesuche</span>
               </li>
-            </ul>
-            <h3 className="text-xl font-semibold mt-8">Videounterstützte Problemanalysen sowie Lern- und Verhaltenstrainings (nach dem IntraActPlus-Konzept) bei:</h3>
-            <ul className="list-disc list-inside space-y-2 text-gray-700">
-              <li>Lern- und Leistungsstörungen</li>
-              <li>Teilleistungsstörungen (Lese-Rechtschreibstörung / Dyskalkulie)</li>
-              <li>Aufmerksamkeitsstörungen (ADS/ADHS)</li>
-              <li>Verhaltensproblemen</li>
             </ul>
           </div>
 
