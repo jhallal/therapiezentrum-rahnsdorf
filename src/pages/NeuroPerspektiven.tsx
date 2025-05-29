@@ -174,7 +174,7 @@ const NeuroPerspektiven = () => {
         {/* FortBildung */}
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
-            <h3 className="text-2xl font-semibold text-primary mb-6">Fortbildung  “Trainer:in bei ADHS im Erwachsenenalter</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">Fortbildung  „Trainer:in bei ADHS im Erwachsenenalter“</h3>
             <p className="text-gray-600 mb-4">
               Wir bieten kontinuierliche Weiterbildungs- und Schulungsprogramme für Fachleute im Bereich der ADHS-Therapie und -Diagnostik an.
             </p>
