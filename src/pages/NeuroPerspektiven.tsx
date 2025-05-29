@@ -135,7 +135,7 @@ const NeuroPerspektiven = () => {
 
         {/* ADHS Assessment */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-primary mb-6">Therapie/ Beratung für weiblich sozialisierte Erwachsene mit ADHS
+          <h3 className="text-2xl font-semibold text-primary mb-6">Therapie/Beratung für weiblich sozialisierte Erwachsene mit ADHS
             Ergotherapie und Coaching
           </h3>
           <div className="grid md:grid-cols-2 gap-12">
