@@ -40,9 +40,12 @@ const Physiotherapie = () => {
             </div>
             <div className="space-y-2">
               <p className="text-xl text-gray-600">Staatlich geprüfte Physiotherapeutin</p>
-            <p className="text-xl text-gray-600">Bachelor of Health</p>
+              <p className="text-xl text-gray-600">Bachelor of Health</p>
             </div>
           </div>
+
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
           {/* Main Content Grid */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -70,6 +73,8 @@ const Physiotherapie = () => {
               </ul>
             </div>
           </div>
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
           {/* CANTIENICA Method Section */}
           <div className="mb-12">
@@ -81,6 +86,9 @@ const Physiotherapie = () => {
               <p>Die CANTIENICA®-Methode wird stetig von Benita Cantieni weiterentwickelt. Weitere Informationen sind unter <a href="http://www.cantienica.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.cantienica.com</a> zu finden.</p>
             </div>
           </div>
+
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
           {/* Training Times Section */}
           <div className="mb-12">
@@ -103,6 +111,9 @@ const Physiotherapie = () => {
               <p className="text-gray-600 font-semibold">Ich bitte in jedem Fall dringend um telefonische Terminabsprache!!!</p>
             </div>
           </div>
+
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
           {/* Contact Section */}
           <div>

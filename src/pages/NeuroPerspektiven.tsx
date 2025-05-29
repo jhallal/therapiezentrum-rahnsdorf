@@ -3,11 +3,35 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { useToast } from "@/components/ui/use-toast";
 
 const NeuroPerspektiven = () => {
   const [email, setEmail] = useState("");
   const { toast } = useToast();
+
+  const teamMembers = [
+    {
+      name: "Marianne Jouanneaux",
+      role: "Ergotherapeutin",
+      image: "/images/marianne-Jouanneaux.jpg"
+    },
+    {
+      name: "Natalie Meyer",
+      role: "Ergotherapeutin, Fachtherapeutin für ADHS im Erwachsenenalter, Paartherapeutin",
+      image: "/images/natalie-meyer.jpg"
+    },
+    {
+      name: "Franziska Schult",
+      role: "Ergotherapeutin",
+      image: "/images/franziska-schult.jpeg"
+    },
+    {
+      name: "Sabrina Heizmann",
+      role: "Ergotherapeutin",
+      image: "/images/sabrina-heizmann.jpeg"
+    }
+  ];
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -69,20 +93,18 @@ const NeuroPerspektiven = () => {
 
             {/* Team Members */}
             <div className="grid grid-cols-2 gap-6">
-              {[
-                { name: "Team Member Name", role: "Role" },
-                { name: "Team Member Name", role: "Role" },
-                { name: "Team Member Name", role: "Role" },
-                { name: "Team Member Name", role: "Roles" }
-              ].map((member) => (
-                <div key={member.name} className="text-center">
-                  <img
-                    src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80"
-                    alt={member.name}
-                    className="w-24 h-24 rounded-full mx-auto mb-3 transition-transform hover:scale-110"
-                  />
-                  <h4 className="font-semibold">{member.name}</h4>
-                  <p className="text-sm text-gray-500">{member.role}</p>
+              {teamMembers.map((member) => (
+                <div key={member.name} className="flex items-center space-x-4">
+                  <div className="group">
+                    <Avatar className="w-32 h-32 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
+                      <AvatarImage src={member.image} alt={member.name} className="object-cover" />
+                      <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                    </Avatar>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-primary">{member.name}</h3>
+                    <p className="text-sm text-gray-600">{member.role}</p>
+                  </div>
                 </div>
               ))}
             </div>

@@ -81,6 +81,9 @@ const Ergotherapie = () => {
             </div>
           </div>
 
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
+
           {/* Services Section */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-primary mb-8">Angebot</h2>
@@ -137,6 +140,9 @@ const Ergotherapie = () => {
             </ul>
           </div>
 
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
+
           {/* Team Section */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-primary mb-8 text-center">Unser Team</h2>
@@ -158,6 +164,9 @@ const Ergotherapie = () => {
               ))}
             </div>
           </div>
+
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
           {/* Contact Section */}
           <section className="mb-16">

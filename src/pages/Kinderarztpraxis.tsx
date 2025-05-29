@@ -83,6 +83,9 @@ const Kinderarztpraxis = () => {
             </div>
           </div>
 
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
+
           {/* Services Section */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-primary mb-8">Angebot</h2>
@@ -115,6 +118,8 @@ const Kinderarztpraxis = () => {
             </div>
           </section>
 
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
           {/* Opening Hours Section */}
           <section className="mb-16">
@@ -139,9 +144,12 @@ const Kinderarztpraxis = () => {
             </Card>
           </section>
 
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
+
           {/* Team Section */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-8">Team</h2>
+            <h2 className="text-3xl font-bold text-primary mb-8">Unser Team</h2>
             <div className="md:w-1/2 h-80 mx-auto mb-10 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <img
                 src="/images/kinderarztpraxis-team.jpg"
@@ -166,6 +174,9 @@ const Kinderarztpraxis = () => {
               ))}
             </div>
           </section>
+
+          {/* Modern Section Separator */}
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
           {/* Contact Section */}
           <section className="mb-16">
