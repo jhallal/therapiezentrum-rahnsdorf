@@ -84,38 +84,37 @@ const NeuroPerspektiven = () => {
         <div className="w-32 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto my-16 rounded-full" />
 
         {/* About Us and Praxis Photo */}
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="space-y-16 mb-16">
           <div>
-            <h3 className="text-2xl font-semibold text-primary mb-6">Über Uns</h3>
+            <h2 className="text-2xl font-bold text-primary mb-8 text-center">Unser Team</h2>
             <p className="text-gray-600 mb-8">
               Unser spezialisiertes ADHS-Therapiezentrum bietet umfassende Diagnostik und Behandlung für Jugendliche und Erwachsene. Mit langjähriger Erfahrung und einem engagierten Team bieten wir individuelle Betreuung und Unterstützung für Menschen mit ADHS.
             </p>
-
-            {/* Team Members */}
-            <div className="grid grid-cols-2 gap-6">
-              {teamMembers.map((member) => (
-                <div key={member.name} className="flex items-center space-x-4">
-                  <div className="group">
-                    <Avatar className="w-32 h-32 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
-                      <AvatarImage src={member.image} alt={member.name} className="object-cover" />
-                      <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                    </Avatar>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-primary">{member.name}</h3>
-                    <p className="text-sm text-gray-600">{member.role}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div>
             <img
               src="/images/Marianne_Jouanneaux-00596.jpg"
               alt="Marianne Jouanneaux"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
             />
+          </div>
+        </div>
+
+        {/* Team Section */}
+        <div className="mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {teamMembers.map((member) => (
+              <div key={member.name} className="flex items-center space-x-4">
+                <div className="group">
+                  <Avatar className="w-32 h-32 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
+                    <AvatarImage src={member.image} alt={member.name} className="object-cover" />
+                    <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                  </Avatar>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary">{member.name}</h3>
+                  <p className="text-sm text-gray-600">{member.role}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
