@@ -23,12 +23,12 @@ const NeuroPerspektiven = () => {
     },
     {
       name: "Franziska Schult",
-      role: "Ergotherapeutin, Fachliche Leitung",
+      role: "Ergotherapeutin",
       image: "/images/franziska-schult.jpeg"
     },
     {
       name: "Sabrina Heizmann",
-      role: "Ergotherapeutin, Fachliche Leitung",
+      role: "Ergotherapeutin",
       image: "/images/sabrina-heizmann.jpeg"
     }
   ];
