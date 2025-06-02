@@ -13,7 +13,7 @@ const NeuroPerspektiven = () => {
   const teamMembers = [
     {
       name: "Marianne Jouanneaux",
-      role: "Ergotherapeutin",
+      role: "CEO, Ergotherapeutin, Dozentin, Autorin",
       image: "/images/marianne-Jouanneaux.jpg"
     },
     {
