@@ -18,17 +18,17 @@ const NeuroPerspektiven = () => {
     },
     {
       name: "Natalie Meyer",
-      role: "Ergotherapeutin, Fachtherapeutin für ADHS im Erwachsenenalter, Paartherapeutin",
+      role: "Ergotherapeutin, Fachtherapeutin für ADHS im Erwachsenenalter, Fachliche Leitung, Paartherapeutin",
       image: "/images/natalie-meyer.jpg"
     },
     {
       name: "Franziska Schult",
-      role: "Ergotherapeutin",
+      role: "Ergotherapeutin, Fachliche Leitung",
       image: "/images/franziska-schult.jpeg"
     },
     {
       name: "Sabrina Heizmann",
-      role: "Ergotherapeutin",
+      role: "Ergotherapeutin, Fachliche Leitung",
       image: "/images/sabrina-heizmann.jpeg"
     }
   ];
