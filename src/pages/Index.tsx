@@ -10,25 +10,29 @@ const Index = () => {
       id: "kinderarzt",
       title: "Kinderarztpraxis Dr. Busse",
       description: "Fachärztin für Kinder- und Jugendmedizin. Psychotherapeutin (tiefenpsychologisch fundiert).",
-      imageUrl: "/images/dr.busse-praxis.jpg"
+      imageUrl: "/images/dr.busse-praxis.jpg",
+      pagePath: "/kinderarztpraxis"
     },
     {
       id: "ergotherapie",
       title: "Ergotherapie Busse",
       description: "Staatlich anerkannte Ergotherapeutin.",
-      imageUrl: "/images/ergotherapie-busse.jpg"
+      imageUrl: "/images/ergotherapie-busse.jpg",
+      pagePath: "/ergotherapiebusse"
     },
     {
       id: "neuroperspektiven",
       title: "Neuro Perspektiven",
       description: "Spezialisiert auf die Diagnose und Behandlung von Aufmerksamkeitsdefizit-Hyperaktivitätsstörung (ADHS) bieten unsere Experten umfassende Diagnostik- und Therapiemöglichkeiten für Kinder und Erwachsene, die mit ADHS zu kämpfen haben.",
-      imageUrl: "/images/neuroperspektiven.jpg"
+      imageUrl: "/images/neuroperspektiven.jpg",
+      pagePath: "/neuroperspektiven"
     },
     {
       id: "physiotherapie",
       title: "Raum Für Haltung, Bewegung Und Balance",
       description: "Staatlich geprüfte Physiotherapeutin",
-      imageUrl: "/images/Raum Für Haltung, Bewegung Und Balance.jpg"
+      imageUrl: "/images/Raum Für Haltung, Bewegung Und Balance.jpg",
+      pagePath: "/raum-fur-haltung-bewegung-und-balance"
     }
   ];
 
